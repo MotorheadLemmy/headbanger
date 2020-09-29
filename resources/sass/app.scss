@@ -1,0 +1,208 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+.nav-scroller{
+	background:#FFDAB9;
+	color:#2F4F4F;
+}
+body{
+	background:linear-gradient(to top left, DarkSalmon, Plum,  gold);
+  min-height:100vh;
+}
+
+footer{
+	width:80%;
+	margin-left:10%;
+}
+.jumbotron{
+	padding:10px;
+	background:url(/images/zal.jpg) no-repeat;
+  background-size:cover;
+  height:450px;
+  color:white;
+  font-family: 'Bad Script', cursive;
+  font-size:27px;
+}
+
+.h2 a{font-family:'Pangolin', cursive;}
+.h2 a.active{color: #f00 !important;}
+
+p{
+	 text-align:justify;
+}
+.hi{
+   text-align:left;
+}
+ .headbanger {
+	color:green;
+	font-family: 'Righteous', cursive;
+	font-size:40px;
+
+}
+.headbanger:hover{
+  text-decoration:none;
+  color:green;
+}
+.linkshirt{
+  color:black;
+}
+.linkshirt:hover{
+  text-decoration:none;
+  color:black;
+  }
+
+.auth{
+	background:linear-gradient(to top left, powderblue, pink);
+}
+.image {
+cursor:pointer;
+}
+
+
+
+
+.minimized {
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+ 
+.minimized:hover {
+  border: 1px solid yellow;
+}
+ 
+
+#magnify {
+  display: none;
+ 
+ 
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+ 
+#magnify img {
+  width: 100%;
+}
+ 
+
+#overlay {
+  display: none;
+ 
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+ 
+
+#close-popup {
+  width: 30px;
+  height: 30px;
+ 
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+ 
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+ 
+@keyframes rota {
+ 25% { transform: rotate(360deg); }
+}
+ 
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.news{
+  font-family: 'Caveat', cursive;
+  font-size:60px;
+  color:#2F4F4F;
+}
+
+.priceshirt{
+  font-size:20px;
+  font-weight:900;
+}
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+.wrapper i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+img{max-width: 100%; height: auto}
+
+.zoom-img{
+  display: inline-block
+}
+
+.bordercomment{
+  border:2px solid gray;
+  border-radius:10px;
+
+}
+.commenttext{
+font-style:italic;
+  
+}
+
+.cartbtn{
+font-size:11px;
+  
+}
+
+
+
+
+
+
+
+

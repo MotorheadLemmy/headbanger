@@ -38,7 +38,7 @@
 			    <p><input name="size" type="radio" value="L" checked>L</p>
 			    <p><input name="size" type="radio" value="XL">XL</p>
 				
-				<input type="number" name="qty" value="1">
+				<input type="number" name="qty" value="1" class="widthinput">
 				<input type="hidden" name="shirt_id" value="{{$shirt->id}}">
 				<button class="btn btn-primary">Добавить в корзину</button>
 			</form>

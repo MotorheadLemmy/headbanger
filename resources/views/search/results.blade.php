@@ -16,7 +16,7 @@
         	@endif
         	<p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date('d.m.Y H:i', strtotime($onenews->created_at))}}  <i class="fa fa-commenting-o" aria-hidden="true"></i>  Комментариев:{{$onenews->comments->count()}}</p>
         	<p>{!!\Str::words($onenews->description, 40)!!}
-        	<a href="/news/{{$onenews->slug}}">Читать далее</a>
+        	<a href="/news/{{$onenews->slug}}">Читать далее</a></p>
 
         </div>
         
@@ -33,7 +33,7 @@
         	@endif
         	<p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date('d.m.Y H:i', strtotime($review->created_at))}} <i class="fa fa-commenting-o" aria-hidden="true"></i>  Комментариев:{{$review->comments->count()}}</p>
         	<p>{!!\Str::words($review->description, 40)!!}
-        	<a href="/reviews/{{$review->slug}}">Читать далее</a>
+        	<a href="/reviews/{{$review->slug}}">Читать далее</a></p>
         </div>
     </div>
 	@endforeach
@@ -47,7 +47,7 @@
         	@endif
         	<p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date('d.m.Y H:i', strtotime($interview->created_at))}} <i class="fa fa-commenting-o" aria-hidden="true"></i> Комментариев:{{$interview->comments->count()}}</p>
         	<p>{!!\Str::words($interview->description, 80)!!}
-        	<a href="/interviews/{{$interview->slug}}">Читать далее</a>
+        	<a href="/interviews/{{$interview->slug}}">Читать далее</a></p>
         </div>
     </div>
 	@endforeach
@@ -56,28 +56,36 @@
 		<div>
 			<br>
 			<div class="row my-5">
-			<div class="col-4">
+			<div class="col-5">
 
 
-		<a href="/buy/{{$shirt->slug}}" class="linkshirt"><img src="{{$shirt->img}}" alt="{{$shirt->name}}" class="mr-3" style="width:80%"><br>
+		<a href="/buy/{{$shirt->slug}}" class="linkshirt"><img src="{{$shirt->img}}" alt="{{$shirt->name}}" class="mr-3" style="width:80%"></a><br>
 	
       </div>
 
-  <div class="col-8">
-  	<h3 class="text-center mb-3 mt-3">{{$shirt->name}}</h3>
+  <div class="col-7">
+  	<h3 class="text-center mb-3 mt-3"><a href="/buy/{{$shirt->slug}}" class="linkshirt">
+
+  		{{$shirt->name}}</a></h3>
 			
 			
-			<em><b>{{$shirt->description}}</b></em><br>
+			<a href="/buy/{{$shirt->slug}}" class="linkshirt"><b><em>{{$shirt->description}}</em><br>
 			<span class="priceshirt"> Цена:<br>
-	€ {{$shirt->price}}</a><br></span>
+	€ {{$shirt->price}}<br></span></a></b>
 	
 		</div>
-		</div>
+		
 	</div>
+</div>
 
 	@endforeach
-	@endif	
-	</div>
-	
 </div>
+
+	@endif	
+</div>
+
+
+	
+
+
 @endsection

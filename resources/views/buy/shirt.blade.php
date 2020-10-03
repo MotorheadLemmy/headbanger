@@ -5,7 +5,7 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-6">
+		<div class="col-12 col-sm-6">
 				<div class="zoom-img my-3">
 					<img src="{{$shirt->img}}" alt="{{$shirt->name}}" class="image minimized" data-big='{{$shirt->img}}'>
 				</div>
@@ -23,7 +23,7 @@
 				 @endif
 
 		</div>
-		<div class="col-6">
+		<div class="col-12 col-sm-6">
 			
 			<span class="priceshirt">Цена:<br>
 			€ {{$shirt->price}}</span><br>

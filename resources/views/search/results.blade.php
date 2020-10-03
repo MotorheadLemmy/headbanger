@@ -55,15 +55,16 @@
 	
 		<div>
 			<br>
+			<div class="container">
 			<div class="row my-5">
-			<div class="col-5">
+			<div class="col-12 col-sm-5 text-center">
 
 
 		<a href="/buy/{{$shirt->slug}}" class="linkshirt"><img src="{{$shirt->img}}" alt="{{$shirt->name}}" class="mr-3" style="width:80%"></a><br>
 	
       </div>
 
-  <div class="col-7">
+  <div class="col-12 col-sm-7 text-center">
   	<h3 class="text-center mb-3 mt-3"><a href="/buy/{{$shirt->slug}}" class="linkshirt">
 
   		{{$shirt->name}}</a></h3>
@@ -76,6 +77,7 @@
 		</div>
 		
 	</div>
+</div>
 </div>
 
 	@endforeach
